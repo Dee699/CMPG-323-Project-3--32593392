@@ -6,13 +6,16 @@ using System.Linq;
 namespace TelemetryPortal_MVC.Repository
     
 {
-    public class ProjectRepository
+    public class ProjectRepository : GenericRepository<Project>, IProjectRepository
     {
-        protected readonly TechtrendsContext _context = new TechtrendsContext();
-
-        public IEnumerable<Project> GetAll()
-        { 
-         return _context.Projects.ToList();
+        public ProjectRepository(TechtrendsContext context) : base(context)
+        {
         }
+        public Project GetMostRecentProjects()
+        {
+          return _context.Projects.OrderByDescending(projects => projects.ProjectCreationDate).FirstOrDefault();
+        }
+
+
     }
 }

@@ -10,7 +10,7 @@ namespace TelemetryPortal_MVC.Repository
         }
         public Client GetMostRecentClient()
         {
-            return _context.Clients.OrderByDescending(clients => clients.CreatedDate).FirstOrDefault();
+            return _context.Clients.OrderByDescending(clients => clients.DateOnboarded).FirstOrDefault();
         }
 
 
