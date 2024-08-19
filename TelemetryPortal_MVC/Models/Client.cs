@@ -19,5 +19,5 @@ public partial class Client
 
     [DisplayName("Date Onboarded")]
     public DateTime? DateOnboarded { get; set; }
-    public object CreatedDate { get; internal set; }
+    //public DateTime CreatedDate { get; set; }
 }
