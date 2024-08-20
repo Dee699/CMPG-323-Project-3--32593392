@@ -18,6 +18,7 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 builder.Services.AddControllersWithViews();
 builder.Services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddTransient<IClientRepository, ClientRepository>();
+builder.Services.AddTransient<IProjectRepository, ProjectRepository>();
 
 var app = builder.Build();
 

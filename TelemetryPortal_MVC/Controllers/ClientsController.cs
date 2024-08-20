@@ -26,7 +26,7 @@ namespace TelemetryPortal_MVC.Controllers
         public async Task<IActionResult> Index()
         {
             var results = _clientRepository.GetAll();
-            return View(await _context.Clients.ToListAsync());
+            return View(results);
         }
 
         // GET: Clients/Details/5

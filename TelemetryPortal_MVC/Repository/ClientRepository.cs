@@ -5,8 +5,10 @@ namespace TelemetryPortal_MVC.Repository
 {
     public class ClientRepository: GenericRepository<Client>, IClientRepository 
     {
+        protected readonly TechtrendsContext _conn;
         public ClientRepository(TechtrendsContext context): base(context) 
-        { 
+        {
+            _conn = context;
         }
         public Client GetMostRecentClient()
         {

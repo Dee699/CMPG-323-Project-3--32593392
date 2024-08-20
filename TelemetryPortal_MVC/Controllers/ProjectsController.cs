@@ -28,7 +28,7 @@ namespace TelemetryPortal_MVC.Controllers
 
             var results = _projectRepository.GetAll();
 
-            return View(await _context.Projects.ToListAsync());
+            return View(results);
         }
 
         // GET: Projects/Details/5
