@@ -44,3 +44,7 @@ https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/overview/
 https://learn.microsoft.com/en-us/training/paths/aspnet-core-web-app/
 
 https://www.youtube.com/watch?v=_5iD4efyeE8
+
+https://www.youtube.com/watch?v=VYvgmMkGUfc
+
+https://www.youtube.com/watch?v=-Xn7i_BcKJg
