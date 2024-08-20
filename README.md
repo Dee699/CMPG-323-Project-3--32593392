@@ -27,7 +27,11 @@ Documenting the application usage within the project's README.md file.
 
 # ReferenceList
 https://www.c-sharpcorner.com/uploadfile/babu_2082/architectural-patterns-in-net/
+
 https://www.c-sharpcorner.com/UploadFile/bd5be5/design-patterns-in-net/
+
 https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/overview/asp-net-mvc-overview
+
 https://learn.microsoft.com/en-us/training/paths/aspnet-core-web-app/
+
 https://www.youtube.com/watch?v=_5iD4efyeE8
