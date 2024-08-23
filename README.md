@@ -1,5 +1,6 @@
 # CMPG323 PROJECT 3 elemetryPortal_MVC
 This project enhances an existing web application to manage project and client data. It focuses on implementing design patterns and best practices.
+
 project3-e0edcxfwa6gberb5.southafricanorth-01.azurewebsites.net
 # Technology Stack:
  I chose MVC for the solution. 
