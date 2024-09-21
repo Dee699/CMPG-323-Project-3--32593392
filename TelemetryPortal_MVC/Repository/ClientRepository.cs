@@ -10,11 +10,41 @@ namespace TelemetryPortal_MVC.Repository
         {
             _conn = context;
         }
-        public Client GetMostRecentClient()
+
+        // Method to get clients by ID (case-insensitive search)
+        public Client GetClientById(Guid id)
         {
-            return _context.Clients.OrderByDescending(clients => clients.DateOnboarded).FirstOrDefault();
+            var client = _conn.Clients.FirstOrDefault(client => client.ClientId == id);
+            if (client == null)
+            {
+                throw new InvalidOperationException($"Client with ID {id} not found.");
+            }
+            return client;
         }
 
 
+        // Method to get clients by name (case-insensitive search)
+        public IEnumerable<Client> GetClientsByName(string name)
+        {
+            return _conn.Clients
+                .Where(client => client.ClientName != null && client.ClientName.Contains(name, StringComparison.OrdinalIgnoreCase))
+                .ToList();
+        }
+
+        // Method to get clients by contact email (case-insensitive search)
+        public IEnumerable<Client> GetClientsByContactEmail(string email)
+        {
+            return _conn.Clients
+                .Where(client => client.PrimaryContactEmail != null && client.PrimaryContactEmail.Contains(email, StringComparison.OrdinalIgnoreCase))
+                .ToList();
+        }
+
+        // Method to get clients by date on boarded
+        public IEnumerable<Client> GetClientsByDateOnboarded(DateTime dateOnboarded)
+        {
+            return _conn.Clients
+                .Where(client => client.DateOnboarded == dateOnboarded.Date)
+                .ToList();
+        }
     }
 }

@@ -14,41 +14,55 @@ namespace TelemetryPortal_MVC.Repository
             _context = context;
         }
 
+        //THIS METHOD ADDS A RECORD
         public void Add(T entity)
         {
             _context.Set<T>().Add(entity);
         }
 
+        //THIS METHOD IS RESPONSIBLE FOR ADDING A RANGE RECORD
         public void AddRange(IEnumerable<T> entities)
         {
             _context.Set<T>().AddRange(entities);
         }
 
+        //THIS METHOD IS USED TO FIND A RECORD
         public IEnumerable<T> Find(Expression<Func<T, bool>> expression)
         {
             return _context.Set<T>().Where(expression);
         }
 
+        //THE METHOD GETS ALL RECORDS
         public IEnumerable<T> GetAll()
         {
            return _context.Set<T>().ToList();
         }
 
-        public T GetByID(int id)
+        //THIS METHOD GETS A RECORD BY ID
+        public T GetByID(int id) 
         {
-            return _context.Set<T>().Find(id);
+            var entity = _context.Set<T>().Find(id);
+            if (entity == null)
+            {
+                throw new InvalidOperationException($"Entity of type {typeof(T).Name} with ID {id} not found.");
+            }
+            return entity;
         }
 
+
+        //THIS METHOD REMOVES A RECORD
         public void Remove(T entity)
         {
             _context.Set<T>().Remove(entity);
         }
 
+        //THIS METHOD REMOVES A RANGE
         public void RemoveRange(IEnumerable<T> entities)
         {
             _context.Set<T>().RemoveRange(entities);
         }
 
+        //THIS METHOD UPDATES A RECORD
         public void Update(T entity)
         {
             _context.Set<T>().Update(entity);

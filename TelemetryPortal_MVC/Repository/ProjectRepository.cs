@@ -13,11 +13,45 @@ namespace TelemetryPortal_MVC.Repository
         {
             _conn = context;
         }
+
+        // If no project is found, return a new Project object or null depending on your use case.
         public Project GetMostRecentProject()
         {
-          return _context.Projects.OrderByDescending(projects => projects.ProjectCreationDate).FirstOrDefault();
+            return _conn.Projects.OrderByDescending(p => p.ProjectCreationDate).FirstOrDefault() ?? new Project();
         }
 
 
+        // Implemention of a GetProjectByName method
+        public Project GetProjectByName(string name)
+        {
+            var project = _conn.Projects.FirstOrDefault(p => p.ProjectName == name);
+            if (project == null)
+            {
+                throw new InvalidOperationException("Project not found.");
+            }
+            return project;
+        }
+
+        public IEnumerable<Project> GetProjectsByClientId(Guid clientId)
+        {
+            return _conn.Projects?.Where(p => p.ClientId == clientId).ToList() ?? new List<Project>();
+        }
+
+
+        // Implemention of a GetProjectsByStatus
+        public IEnumerable<Project> GetProjectsByStatus(string status)
+        {
+            return _conn.Projects
+                .Where(p => p.ProjectStatus != null && p.ProjectStatus.Equals(status, StringComparison.OrdinalIgnoreCase))
+                .ToList();
+        }
+
+        // Implemention of a GetProjectsByDescription
+        public IEnumerable<Project> GetProjectsByDescription(string description)
+        {
+            return _conn.Projects
+                .Where(p => p.ProjectDescription != null && p.ProjectDescription.Contains(description, StringComparison.OrdinalIgnoreCase))
+                .ToList();
+        }
     }
 }
