@@ -22,14 +22,16 @@ namespace TelemetryPortal_MVC.Controllers
             _projectRepository = projectRepository;
         }
 
-
-        public async Task<IEnumerable<Project>> GetAllAsync()
+      
+        public async Task<IActionResult> Index()
         {
-            return await _context.Set<Project>().ToListAsync();
+
+            var results = _projectRepository.GetAll();
+
+            return View(results);
         }
 
-
-        //DETAILS METHOD
+         // DETAILS METHOD
         public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null)
