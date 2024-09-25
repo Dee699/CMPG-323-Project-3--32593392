@@ -5,6 +5,7 @@ using System.Linq.Expressions;
 
 namespace TelemetryPortal_MVC.Repository
 {
+    // This is a Generic Repository for both Projects and Clients
     public interface IGenericRepository<T> where T : class
     {
         T GetByID(int id);

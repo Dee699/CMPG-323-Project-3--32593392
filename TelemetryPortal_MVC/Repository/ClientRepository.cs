@@ -3,6 +3,7 @@ using TelemetryPortal_MVC.Models;
 using System.Linq;
 namespace TelemetryPortal_MVC.Repository
 {
+    //This repository class contains  all data access operations relating to Clients
     public class ClientRepository: GenericRepository<Client>, IClientRepository 
     {
         protected readonly TechtrendsContext _conn;

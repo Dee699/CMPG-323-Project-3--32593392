@@ -4,7 +4,7 @@ using System.Collections;
 using System.Linq;
 
 namespace TelemetryPortal_MVC.Repository
-    
+//This repository class contains  all data access operations relating to Projects
 {
     public class ProjectRepository : GenericRepository<Project>, IProjectRepository
     {

@@ -6,7 +6,7 @@ namespace TelemetryPortal_MVC.Repository
 {
     public interface IProjectRepository : IGenericRepository<Project>
     {
-        // Calling all the methods created on the Project Repository
+        // Calling the methods created on the Project Repository
         Project GetMostRecentProject();
 
         IEnumerable<Project> GetProjectsByClientId(Guid clientId);

@@ -14,10 +14,9 @@ public partial class Client
     public string? ClientName { get; set; }
 
     [DisplayName("Primary Contact Email")]
-    
     public string? PrimaryContactEmail { get; set; }
 
     [DisplayName("Date Onboarded")]
     public DateTime? DateOnboarded { get; set; }
-    //public DateTime CreatedDate { get; set; }
+    
 }
