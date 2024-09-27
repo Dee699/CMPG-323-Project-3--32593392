@@ -1,6 +1,3 @@
-Here’s an updated version of your README file with more detailed information and a complete list of references:
-
----
 
 # CMPG 323 Project 3 - TelemetryPortal_MVC
 This project enhances an existing web application to manage project and client data by implementing coding principles, design patterns, and best practices.
