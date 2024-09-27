@@ -16,5 +16,7 @@ namespace TelemetryPortal_MVC.Repository
         IEnumerable<Project> GetProjectsByStatus(string status);
 
         Project GetProjectByName(string name);
+
+        Task<IEnumerable<Project>> GetAllAsync();
     }
 }
