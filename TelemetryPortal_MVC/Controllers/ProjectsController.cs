@@ -18,7 +18,7 @@ namespace TelemetryPortal_MVC.Controllers
 
         public ProjectsController(TechtrendsContext context, IProjectRepository projectRepository)
         {
-            _context = context;
+            _context = context:
             _projectRepository = projectRepository;
         }
 
