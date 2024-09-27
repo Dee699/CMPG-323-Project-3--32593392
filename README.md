@@ -27,7 +27,7 @@ This project enhances an existing web application to manage project and client d
    - Select **Reset Window Layout**.
    - After this, double-click on the `TelemetryPortal_MVC` solution file to open the project components.
 4. **Add Database Connection:**
-   - Modify the `appsettings.json` file in the root directory to include your SQL Server connection string for data access.
+   - The `appsettings.json` file in the root directory is modifies to include the SQL Server connection string for data access.
 
 ### How to Run:
 1. **Open TelemetryPortal_MVC**: Once Visual Studio is open, double-click the `TelemetryPortal_MVC` solution file to view the full project.
