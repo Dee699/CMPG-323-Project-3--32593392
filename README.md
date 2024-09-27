@@ -46,12 +46,15 @@ The project follows the repository pattern:
 - Data operations from the controllers have been transferred to their respective repository classes to maintain separation of concerns.
 
 ## Deployment
-The application can be published on Azure using an App Service (F1 tier). This ensures scalability and ease of access, the steps below have been used to deploy the API:
-1. Create an Azure App Service.
-2. Publish the project from Visual Studio by connecting to your Azure subscription.
-3. Ensure proper security configurations are in place.
+The application can be published on Azure using an App Service (F1 tier), But then since i ran out of Credits on my azure account i used AWS to host my API  
 
+   **AWS Deployment**
+The project is hosted on AWS Elastic Beanstalk. This was done by:
+1. Creating an AWS Elastic Beanstalk environment.
+2. Publishing the project from Visual Studio to AWS using the Elastic Beanstalk service.
+3. Ensuring proper security configurations were in place.
 
+The link to the hosted API: http://telemetryportalmvc-dev.us-east-1.elasticbeanstalk.com/images/tech%20trends%20V2.png
 
 ## Reference 
 List Here is a list of references used throughout the project:
