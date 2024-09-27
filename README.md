@@ -7,7 +7,7 @@ This project enhances an existing web application to manage project and client d
 - **Programming Language:** C#
 - **Database:** SQL Server
 - **Development Tools:** Visual Studio 2022, .NET 8 SDK
-- **Cloud Hosting:** Azure (App Service) / AWS
+- **Cloud Hosting:** Amazon Web Services (AWS)
 
 ## Getting Started
 
@@ -37,7 +37,7 @@ This project focuses on managing CRUD operations for both **Projects** and **Cli
 - **Client Data**: Includes features to create, update, delete, and view client details.
 - **Design Patterns**: Implements the Repository Pattern to separate data access from the logic in controllers.
 - **Security**: Ensures no sensitive credentials are stored in the GitHub repository.
-- **Cloud Hosting**: The application can be deployed to an Azure App Service or AWS.
+- **Cloud Hosting**: The application can be deployed to an Amazon Web Services (AWS) or Azure App Service.
 
 ## Repository Pattern Implementation
 The project follows the repository pattern:
