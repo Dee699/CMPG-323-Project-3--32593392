@@ -46,7 +46,7 @@ The project follows the repository pattern:
 - Data operations from the controllers have been transferred to their respective repository classes to maintain separation of concerns.
 
 ## Deployment
-The application can be published on Azure using an App Service (F1 tier). This ensures scalability and ease of access. Follow the steps below to deploy:
+The application can be published on Azure using an App Service (F1 tier). This ensures scalability and ease of access, the steps below have been used to deploy my API:
 1. Create an Azure App Service.
 2. Publish the project from Visual Studio by connecting to your Azure subscription.
 3. Ensure proper security configurations are in place.
