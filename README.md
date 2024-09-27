@@ -80,7 +80,7 @@ List Here is a list of references used throughout the project:
 
 12. Microsoft Docs. (2024). *ASP.NET MVC Overview*. Retrieved from https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started
 
-** YouTube Tutorials (Various Influencers on .NET and MVC Patterns):
+** YouTube Tutorials (Various Influencers on .NET and MVC Patterns):**
 
 13. YouTube. (2024). *ASP.NET MVC Tutorial for Beginners*. Retrieved from https://www.youtube.com/watch?v=_5iD4efyeE8
 
