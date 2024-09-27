@@ -54,8 +54,7 @@ The project is hosted on AWS Elastic Beanstalk. This was done by:
 2. Publishing the project from Visual Studio to AWS using the Elastic Beanstalk service.
 3. Ensuring proper security configurations were in place.
 
-The link to the hosted API: telemetryportalmvc-dev.us-east-1.elasticbeanstalk.com
-
+The link to the hosted API: http://telemetryportalmvc-dev.us-east-1.elasticbeanstalk.com/ 
 ## Reference 
 List Here is a list of references used throughout the project:
 
