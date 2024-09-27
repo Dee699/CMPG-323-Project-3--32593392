@@ -47,5 +47,11 @@ namespace TelemetryPortal_MVC.Repository
                 .Where(client => client.DateOnboarded == dateOnboarded.Date)
                 .ToList();
         }
+
+         // Implemention of the asynchronous GetAllAsync method
+          public async Task<IEnumerable<Client>> GetAllAsync()
+            {
+             return await _context.Clients.ToListAsync(); 
+            }
     }
 }
