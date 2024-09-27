@@ -24,10 +24,10 @@ namespace TelemetryPortal_MVC.Controllers
 
       
         public async Task<IActionResult> Index()
-        {
-            var results = _clientRepository.GetAll();
-            return View(results);
-        }
+         {
+             var results = await _clientRepository.GetAllAsync(); // Call the async version of GetAll
+             return View(results);
+         }
 
      
         public async Task<IActionResult> Details(Guid? id)
