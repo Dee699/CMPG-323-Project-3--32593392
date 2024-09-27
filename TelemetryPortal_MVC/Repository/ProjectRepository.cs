@@ -53,5 +53,12 @@ namespace TelemetryPortal_MVC.Repository
                 .Where(p => p.ProjectDescription != null && p.ProjectDescription.Contains(description, StringComparison.OrdinalIgnoreCase))
                 .ToList();
         }
+  
+          // Implemention of the asynchronous GetAllAsync method
+          public async Task<IEnumerable<Project>> GetAllAsync()
+          {
+           return await _context.Projects.ToListAsync(); 
+           }
+
     }
 }
