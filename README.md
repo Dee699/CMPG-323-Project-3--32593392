@@ -53,7 +53,9 @@ The application can be published on Azure using an App Service (F1 tier). This e
 
 
 
-## Reference List
+## Reference 
+List Here is a list of references used throughout the project:
+
 1. Acharya, S. (2024). *Architectural Patterns in .NET*. C# Corner. Retrieved from https://www.c-sharpcorner.com/uploadfile/babu_2082/architectural-patterns-in-net/
 
 2. Kaushik, M. (2024). *Design Patterns in .NET*. C# Corner. Retrieved from https://www.c-sharpcorner.com/UploadFile/bd5be5/design-patterns-in-net/
@@ -77,6 +79,8 @@ The application can be published on Azure using an App Service (F1 tier). This e
 11. Microsoft Learn. (2024). *Architecting Modern Web Applications with ASP.NET Core and Azure*. Retrieved from https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/
 
 12. Microsoft Docs. (2024). *ASP.NET MVC Overview*. Retrieved from https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started
+
+** YouTube Tutorials (Various Influencers on .NET and MVC Patterns):
 
 13. YouTube. (2024). *ASP.NET MVC Tutorial for Beginners*. Retrieved from https://www.youtube.com/watch?v=_5iD4efyeE8
 
