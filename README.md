@@ -12,7 +12,7 @@ This project enhances an existing web application to manage project and client d
 ## Getting Started
 
 ### Prerequisites:
-1. **Access to NWU Azure tenant**: Log in using NWU Microsoft account (`12345678@mynwu.ac.za`).
+1. **Everything is hosted on AWS
 2. **Visual Studio 2022 Community Edition**: Ensure that Visual Studio and .NET 8 SDK are installed on thw machine.
 3. **Database**: Ensure the SQL Server database is up and running.
 
